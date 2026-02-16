@@ -82,9 +82,9 @@ export default function Home() {
           </div>
           
           <nav className="hidden md:flex items-center gap-6">
-            <a href="#tjenester" className="text-sm font-medium text-gray-600 hover:text-gray-900">Tjenester</a>
-            <a href="#om-oss" className="text-sm font-medium text-gray-600 hover:text-gray-900">Om oss</a>
-            <a href="#kontakt" className="text-sm font-medium text-gray-600 hover:text-gray-900">Kontakt</a>
+            <a href="/tjenester" className="text-sm font-medium text-gray-600 hover:text-gray-900">Tjenester</a>
+            <a href="/om-oss" className="text-sm font-medium text-gray-600 hover:text-gray-900">Om oss</a>
+            <a href="/kontakt" className="text-sm font-medium text-gray-600 hover:text-gray-900">Kontakt</a>
             <Button 
               style={{ backgroundColor: ACCENT_COLOR }}
               className="text-white"
@@ -103,9 +103,9 @@ export default function Home() {
 
         {mobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
-            <a href="#tjenester" className="text-gray-600">Tjenester</a>
-            <a href="#om-oss" className="text-gray-600">Om oss</a>
-            <a href="#kontakt" className="text-gray-600">Kontakt</a>
+            <a href="/tjenester" className="text-gray-600">Tjenester</a>
+            <a href="/om-oss" className="text-gray-600">Om oss</a>
+            <a href="/kontakt" className="text-gray-600">Kontakt</a>
             <Button style={{ backgroundColor: ACCENT_COLOR }} className="w-full text-white">
               Kontakt oss
             </Button>
@@ -179,7 +179,7 @@ export default function Home() {
                 den enkelte kundes behov. Vårt fokus er alltid på kvalitet, trygghet og bærekraft.
               </p>
               <a 
-                href="#kontakt" 
+                href="/kontakt" 
                 className="inline-flex items-center gap-2 font-medium"
                 style={{ color: ACCENT_COLOR }}
               >

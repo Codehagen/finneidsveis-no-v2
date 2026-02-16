@@ -10,3 +10,6 @@ export * from "./landing/stats";
 export * from "./landing/features";
 export * from "./landing/process";
 export * from "./landing/testimonials";
+export * from "./landing/contact-page";
+export * from "./landing/about-page";
+export * from "./landing/services-page";
