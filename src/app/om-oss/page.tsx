@@ -1,6 +1,6 @@
 import { AboutPage, Layout } from "@/components";
 
-const PRIMARY_COLOR = "#F3D030";
+const PRIMARY_COLOR = "#D71921";
 
 const NAV_LINKS = [
   { label: "Tjenester", href: "/tjenester" },
@@ -12,54 +12,46 @@ export default function Page() {
   return (
     <Layout
       headerProps={{
-        companyName: "Kjeldsberg",
+        companyName: "Finneid Sveis",
         navLinks: NAV_LINKS,
         ctaText: "Kontakt oss",
         ctaHref: "/kontakt",
         primaryColor: PRIMARY_COLOR,
       }}
       footerProps={{
-        companyName: "Kjeldsberg Eiendomsforvaltning",
-        description: "Vi skaper trygghet for eierne og trivsel for leietakerne.",
+        companyName: "Finneid Sveiseverksted AS",
+        description: "Så det holder",
         contact: {
-          phone: "45 85 90 00",
-          email: "kundeservice@kjeldsberg.no",
-          address: "Sluppenvegen 19, 7037 Trondheim"
+          phone: "75 62 00 00",
+          email: "post@finneidsveis.no",
+          address: "Finneid, 8220 Fauske"
         },
         primaryColor: PRIMARY_COLOR,
         columns: [
           {
             title: "Tjenester",
             links: [
-              { label: "Eiendomsforvaltning", href: "/tjenester" },
-              { label: "Energi og miljø", href: "/tjenester" },
-              { label: "Brann og sikkerhet", href: "/tjenester" },
-              { label: "Prosjektledelse", href: "/tjenester" },
-            ]
-          },
-          {
-            title: "Om oss",
-            links: [
-              { label: "Om Kjeldsberg", href: "/om-oss" },
-              { label: "Kontakt", href: "/kontakt" },
-              { label: "Ledige stillinger", href: "#" },
+              { label: "Tjenester", href: "/tjenester" },
+              { label: "Om oss", href: "/om-oss" },
+              { label: "Kontakt", href: "/kontakt" }
             ]
           }
         ]
       }}
     >
       <AboutPage 
-        companyName="Kjeldsberg Eiendomsforvaltning"
-        content="Vi skaper trygghet for eierne og trivsel for leietakerne. Med lang erfaring og bred kompetanse leverer vi skreddersydde løsninger tilpasset den enkelte kundes behov."
-        mission="Å være en pålitelig partner som skaper verdi for eiere og leietakere gjennom profesjonell eiendomsforvaltning."
-        vision="Å være den ledende totalleverandøren av drift og forvaltning i Midt-Norge."
-        values={[
-          "Trygghet - Vi tar ansvar og leverer pålitelige løsninger",
-          "Kompetanse - Vi har bred erfaring og faglig kunnskap",
-          "Bærekraft - Vi fokuserer på miljø og langsiktig verdi",
-          "Service - Vi setter kunden i fokus"
-        ]}
-        heroImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
+        title="Om Finneid Sveis"
+        subtitle="Ett av Nord-Norges eldste sveiseverksted"
+        companyName="Finneid Sveis"
+        content={`Finneid Sveiseverksted AS ligger på Finneid i Fauske kommune og er et av nordnorges største og eldste firmaer på sveising, konstruksjoner og bygg.
+
+Vi er ledende på store konstruksjoner som broer, industribygg, haller samt bærende konstruksjoner. I våre lokaler på Finneid har vi kapasitet til å bygge de største konstruksjonene innendørs samt at vi og kan overflatebehandle i egen lakk/malehall.
+
+Vår forretningsfilosofi er til enhver tid å levere produkter:
+• AV HØY KVALITET
+• TIL FASTSATT TID
+• TIL RIKTIG PRIS`}
+        values={["Kvalitet","Pålitelighet","Kompetanse","Lokal"]}
         primaryColor={PRIMARY_COLOR}
       />
     </Layout>
