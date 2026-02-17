@@ -28,20 +28,15 @@ export default function Page() {
         },
         primaryColor: PRIMARY_COLOR,
         columns: [
-          {
-            title: "Tjenester",
-            links: [
-              { label: "Tjenester", href: "/tjenester" },
-              { label: "Om oss", href: "/om-oss" },
-              { label: "Kontakt", href: "/kontakt" }
-            ]
-          }
+          { title: "Tjenester", links: [
+            { label: "Tjenester", href: "/tjenester" },
+            { label: "Om oss", href: "/om-oss" },
+            { label: "Kontakt", href: "/kontakt" }
+          ]}
         ]
       }}
     >
       <ContactPage 
-        title="Kontakt oss"
-        subtitle="Ta gjerne kontakt med oss"
         companyName="Finneid Sveis"
         contact={{
           phone: "75 62 00 00",

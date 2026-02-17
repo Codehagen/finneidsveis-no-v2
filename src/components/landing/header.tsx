@@ -41,14 +41,14 @@ export function Header({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
+    <header className={`fixed top-0 left-0 right-0 z-50 ${transparent ? 'bg-transparent' : 'bg-white/80 backdrop-blur-md border-b border-gray-100'}`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           {logo ? (
             typeof logo === "string" && logo.startsWith("http") ? (
               <img src={logo} alt={companyName} className="h-8" />
             ) : (
-              <span className="text-xl font-semibold">{logo}</span>
+              <span className={`text-xl font-semibold ${transparent ? 'text-white' : 'text-[#101828]'}`}>{logo}</span>
             )
           ) : (
             <>
@@ -62,7 +62,7 @@ export function Header({
                   <path d="M12 22V12" />
                 </svg>
               </div>
-              <span className="text-xl font-semibold text-[#101828]">{companyName}</span>
+              <span className={`text-xl font-semibold ${transparent ? 'text-white' : 'text-[#101828]'}`}>{companyName}</span>
             </>
           )}
         </div>
@@ -72,7 +72,7 @@ export function Header({
             <a 
               key={index}
               href={link.href} 
-              className="text-[#6B7280] hover:text-[#101828] transition-colors"
+              className={`transition-colors ${transparent ? 'text-white/80 hover:text-white' : 'text-[#6B7280] hover:text-[#101828]'}`}
             >
               {link.label}
             </a>
@@ -98,12 +98,12 @@ export function Header({
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4 mobile-nav-enter">
+        <div className={`md:hidden border-t px-6 py-4 flex flex-col gap-4 mobile-nav-enter ${transparent ? 'bg-black/80 border-white/20' : 'bg-white border-gray-100'}`}>
           {navLinks.map((link, index) => (
             <a 
               key={index}
               href={link.href} 
-              className="text-[#6B7280]"
+              className={transparent ? 'text-white' : 'text-[#6B7280]'}
             >
               {link.label}
             </a>

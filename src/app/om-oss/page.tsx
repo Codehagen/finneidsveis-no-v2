@@ -28,21 +28,17 @@ export default function Page() {
         },
         primaryColor: PRIMARY_COLOR,
         columns: [
-          {
-            title: "Tjenester",
-            links: [
-              { label: "Tjenester", href: "/tjenester" },
-              { label: "Om oss", href: "/om-oss" },
-              { label: "Kontakt", href: "/kontakt" }
-            ]
-          }
+          { title: "Tjenester", links: [
+            { label: "Tjenester", href: "/tjenester" },
+            { label: "Om oss", href: "/om-oss" },
+            { label: "Kontakt", href: "/kontakt" }
+          ]}
         ]
       }}
     >
       <AboutPage 
         title="Om Finneid Sveis"
         subtitle="Ett av Nord-Norges eldste sveiseverksted"
-        companyName="Finneid Sveis"
         content={`Finneid Sveiseverksted AS ligger på Finneid i Fauske kommune og er et av nordnorges største og eldste firmaer på sveising, konstruksjoner og bygg.
 
 Vi er ledende på store konstruksjoner som broer, industribygg, haller samt bærende konstruksjoner. I våre lokaler på Finneid har vi kapasitet til å bygge de største konstruksjonene innendørs samt at vi og kan overflatebehandle i egen lakk/malehall.
